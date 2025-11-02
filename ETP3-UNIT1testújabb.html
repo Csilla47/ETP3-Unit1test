@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Enter the Portal 3 — Unit 1 Interactive Test</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f8fb;color:#0b2340;margin:0;padding:20px}
+.container{max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.1)}
+h1{font-size:22px;margin-bottom:4px}
+h2{margin-top:24px}
+small{color:#475569}
+select,input[type=text]{padding:6px;border:1px solid #cbd5e1;border-radius:6px}
+button{background:#2563eb;color:white;border:none;border-radius:6px;padding:8px 12px;cursor:pointer;margin-top:8px}
+.feedback{margin-top:8px;font-weight:bold}
+.correct{color:green}
+.wrong{color:#d9534f}
+.section{margin-top:20px;padding-top:10px;border-top:1px solid #e2e8f0}
+.scorebox{background:#f1f5f9;padding:10px;border-radius:8px;margin-top:14px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Enter the Portal 3 — Unit 1 Interactive Practice</h1>
+<small>Choose or type your answers, check each section, and see your score instantly.</small>
+
+<!-- A -->
+<div class="section" id="secA">
+<h2>A. Vocabulary – Choose the correct match</h2>
+<small>Match each verb with its correct phrase.</small><br><br>
+1. tidy <select id="A1">
+<option value="">-- choose --</option>
+<option>a. clothes</option>
+<option>b. the stairs</option>
+<option>c. best!</option>
+<option>d. my room</option>
+<option>e. the washing-up</option>
+<option>f. the rubbish</option>
+</select><br><br>
+2. iron <select id="A2">
+<option value="">-- choose --</option>
+<option>a. clothes</option>
+<option>b. the stairs</option>
+<option>c. best!</option>
+<option>d. my room</option>
+<option>e. the washing-up</option>
+<option>f. the rubbish</option>
+</select><br><br>
+3. do <select id="A3">
+<option value="">-- choose --</option>
+<option>a. clothes</option>
+<option>b. the stairs</option>
+<option>c. best!</option>
+<option>d. my room</option>
+<option>e. the washing-up</option>
+<option>f. the rubbish</option>
+</select><br><br>
+4. take <select id="A4">
+<option value="">-- choose --</option>
+<option>a. clothes</option>
+<option>b. the stairs</option>
+<option>c. best!</option>
+<option>d. my room</option>
+<option>e. the washing-up</option>
+<option>f. the rubbish</option>
+</select><br><br>
+5. take out <select id="A5">
+<option value="">-- choose --</option>
+<option>a. clothes</option>
+<option>b. the stairs</option>
+<option>c. best!</option>
+<option>d. my room</option>
+<option>e. the washing-up</option>
+<option>f. the rubbish</option>
+</select><br><br>
+6. All the <select id="A6">
+<option value="">-- choose --</option>
+<option>a. clothes</option>
+<option>b. the stairs</option>
+<option>c. best!</option>
+<option>d. my room</option>
+<option>e. the washing-up</option>
+<option>f. the rubbish</option>
+</select><br>
+<div class="feedback" id="fbA"></div>
+<button onclick="checkA()">Check A</button>
+</div>
+
+<!-- B -->
+<div class="section" id="secB">
+<h2>B. Complete the sentences (use words in the box)</h2>
+<small>Words: coach, physics, hang, active, wash, stairs</small><br><br>
+1. Jim’s dad is a <input type="text" id="B1"><br><br>
+2. Peter is very <input type="text" id="B2"><br><br>
+3. I often <input type="text" id="B3"> out with my friends at the weekend.<br><br>
+4. Her flat is on the seventh floor, so she always takes the <input type="text" id="B4"><br><br>
+5. <input type="text" id="B5"> is my favourite subject.<br><br>
+6. At the weekend, my brother and I <input type="text" id="B6"> our car.<br>
+<div class="feedback" id="fbB"></div>
+<button onclick="checkB()">Check B</button>
+</div>
+
+<!-- C -->
+<div class="section" id="secC">
+<h2>C. Opposites – Choose the correct opposite</h2>
+<small>Choose the correct opposite for each word or phrase.</small><br><br>
+1. different → <select id="C1">
+<option value="">-- choose --</option>
+<option>same</option>
+<option>similar</option>
+<option>new</option>
+</select><br><br>
+2. easy → <select id="C2">
+<option value="">-- choose --</option>
+<option>difficult</option>
+<option>boring</option>
+<option>hard-working</option>
+</select><br><br>
+3. at the end → <select id="C3">
+<option value="">-- choose --</option>
+<option>at the beginning</option>
+<option>in the middle</option>
+<option>at the start</option>
+</select><br><br>
+4. finish → <select id="C4">
+<option value="">-- choose --</option>
+<option>start</option>
+<option>close</option>
+<option>beginning</option>
+</select><br><br>
+5. before → <select id="C5">
+<option value="">-- choose --</option>
+<option>after</option>
+<option>during</option>
+<option>next</option>
+</select><br><br>
+6. forget → <select id="C6">
+<option value="">-- choose --</option>
+<option>remember</option>
+<option>write</option>
+<option>lose</option>
+</select><br>
+<div class="feedback" id="fbC"></div>
+<button onclick="checkC()">Check C</button>
+</div>
+
+<!-- D -->
+<div class="section" id="secD">
+<h2>D. Communication – Match the sentences with replies</h2>
+<small>Choose the best reply for each sentence.</small><br><br>
+1. I’ve got a maths test today. <select id="D1">
+<option value="">-- choose --</option>
+<option>a. Have a nice day.</option>
+<option>b. Good luck!</option>
+<option>c. I hope so, too!</option>
+<option>d. Thank you. The same to you!</option>
+<option>e. Give my best wishes to them.</option>
+</select><br><br>
+2. I’m visiting my grandparents. <select id="D2">
+<option value="">-- choose --</option>
+<option>a. Have a nice day.</option>
+<option>b. Good luck!</option>
+<option>c. I hope so, too!</option>
+<option>d. Thank you. The same to you!</option>
+<option>e. Give my best wishes to them.</option>
+</select><br><br>
+3. I’m going to school. <select id="D3">
+<option value="">-- choose --</option>
+<option>a. Have a nice day.</option>
+<option>b. Good luck!</option>
+<option>c. I hope so, too!</option>
+<option>d. Thank you. The same to you!</option>
+<option>e. Give my best wishes to them.</option>
+</select><br><br>
+4. I hope everything goes well. <select id="D4">
+<option value="">-- choose --</option>
+<option>a. Have a nice day.</option>
+<option>b. Good luck!</option>
+<option>c. I hope so, too!</option>
+<option>d. Thank you. The same to you!</option>
+<option>e. Give my best wishes to them.</option>
+</select><br><br>
+5. Have a nice day! <select id="D5">
+<option value="">-- choose --</option>
+<option>a. Have a nice day.</option>
+<option>b. Good luck!</option>
+<option>c. I hope so, too!</option>
+<option>d. Thank you. The same to you!</option>
+<option>e. Give my best wishes to them.</option>
+</select><br>
+<div class="feedback" id="fbD"></div>
+<button onclick="checkD()">Check D</button>
+</div>
+
+<!-- E -->
+<div class="section" id="secE">
+<h2>E. Grammar – Present Simple</h2>
+<small>Complete the sentences with the correct form of the verb (Present Simple).</small><br><br>
+1. My family and I <input type="text" id="E1"> (usually / visit) my cousins every summer.<br><br>
+2. Peter <input type="text" id="E2"> (never / play) computer games.<br><br>
+3. <input type="text" id="E3"> your dad <input type="text" id="E3b"> ? (cook)<br><br>
+4. My brother <input type="text" id="E4"> (never / watch) football.<br><br>
+5. How often <input type="text" id="E5"> (he / go) to the cinema?<br><br>
+6. My friend <input type="text" id="E6a"> (never / study) at the weekend. He <input type="text" id="E6b"> (always / do) this in the evening.<br><br>
+7. Tim <input type="text" id="E7"> (not / watch) sport on TV.<br>
+<div class="feedback" id="fbE"></div>
+<button onclick="checkE()">Check E</button>
+</div>
+
+<!-- F -->
+<div class="section" id="secF">
+<h2>F. Prepositions – Choose the correct one</h2>
+<small>Select the correct preposition.</small><br><br>
+1. We don’t usually go to the amusement park <select id="F1"><option></option><option>at</option><option>on</option></select> weekdays.<br><br>
+2. I’m cleaning the windows <select id="F2"><option></option><option>on</option><option>at</option></select> the moment.<br><br>
+3. They watch videos on the internet <select id="F3"><option></option><option>on</option><option>at</option></select> Friday afternoons.<br><br>
+4. We always visit an island <select id="F4"><option></option><option>on</option><option>in</option></select> the summer.<br><br>
+5. Does your class finish <select id="F5a"><option></option><option>at</option><option>in</option></select> 11 a.m.? I don’t get home <select id="F5b"><option></option><option>before</option><option>on</option></select> noon.<br>
+<div class="feedback" id="fbF"></div>
+<button onclick="checkF()">Check F</button>
+</div>
+
+<!-- G -->
+<div class="section" id="secG">
+<h2>G. Reading – True or False</h2>
+<small>Read the text and choose True or False.</small><br><br>
+<strong>Text:</strong> My new school is great! My friend Tony is very outgoing and funny. We both love rollerblading. The school day finishes at 4 p.m., and on Fridays I get home at 6 because I have basketball training. I like science and history, but I don’t like maths.<br><br>
+1. Tony is a very shy person. <select id="G1"><option></option><option>T</option><option>F</option></select><br><br>
+2. Mike really likes rollerblading. <select id="G2"><option></option><option>T</option><option>F</option></select><br><br>
+3. Mike gets home at the same time every day. <select id="G3"><option></option><option>T</option><option>F</option></select><br><br>
+4. Mike thinks maths is fun and easy. <select id="G4"><option></option><option>T</option><option>F</option></select><br>
+<div class="feedback" id="fbG"></div>
+<button onclick="checkG()">Check G</button>
+</div>
+
+<!-- FINAL -->
+<div class="section">
+<h2>Final Score</h2>
+<div id="resultBox" class="scorebox">
+<button onclick="getTotal()">Get Total Score</button>
+<div id="finalFeedback"></div>
+</div>
+</div>
+
+</div>
+
+<script>
+const correct={
+A:["d. my room","a. clothes","e. the washing-up","b. the stairs","f. the rubbish","c. best!"],
+B:["coach","active","hang","stairs","physics","wash"],
+C:["same","difficult","at the beginning","start","after","remember"],
+D:["b. Good luck!","e. Give my best wishes to them.","a. Have a nice day.","c. I hope so, too!","d. Thank you. The same to you!"],
+E:["usually visit","never plays","Does","cook","does he go","never studies","always does","doesn't watch"],
+F:["on","at","on","in","at","before"],
+G:["F","T","F","F"]
+};
+const scores={};
+
+function norm(s){return String(s||'').trim().toLowerCase();}
+
+function checkA(){
+ let s=0;
+ for(let i=1;i<=6;i++){if(document.getElementById("A"+i).value===correct.A[i-1])s++;}
+ document.getElementById("fbA").innerHTML=`${s}/6 correct.`;
+ scores.A=s;
+}
+function checkB(){
+ let s=0;
+ for(let i=1;i<=6;i++){
+  if(norm(document.getElementById("B"+i).value)===correct.B[i-1])s++;
+ }
+ document.getElementById("fbB").innerHTML=`${s}/6 correct.`;
+ scores.B=s;
+}
+function checkC(){
+ let s=0;
+ for(let i=1;i<=6;i++){if(document.getElementById("C"+i).value===correct.C[i-1])s++;}
+ document.getElementById("fbC").innerHTML=`${s}/6 correct.`;
+ scores.C=s;
+}
+function checkD(){
+ let s=0;
+ for(let i=1;i<=5;i++){if(document.getElementById("D"+i).value===correct.D[i-1])s++;}
+ document.getElementById("fbD").innerHTML=`${s}/5 correct.`;
+ scores.D=s;
+}
+function checkE(){
+ let s=0;
+ if(norm(E1.value)===correct.E[0])s++;
+ if(norm(E2.value)===correct.E[1])s++;
+ if(norm(E3.value)===correct.E[2]&&norm(E3b.value)===correct.E[3])s++;
+ if(norm(E4.value)===correct.E[4])s++;
+ if(norm(E5.value)===correct.E[5])s++;
+ if(norm(E6a.value)===correct.E[6])s++;
+ if(norm(E6b.value)===correct.E[7])s++;
+ if(norm(E7.value)===correct.E[8])s++;
+ document.getElementById("fbE").innerHTML=`${s}/7 correct.`;
+ scores.E=s;
+}
+function checkF(){
+ let s=0;
+ if(F1.value===correct.F[0])s++;
+ if(F2.value===correct.F[1])s++;
+ if(F3.value===correct.F[2])s++;
+ if(F4.value===correct.F[3])s++;
+ if(F5a.value===correct.F[4]&&F5b.value===correct.F[5])s++;
+ document.getElementById("fbF").innerHTML=`${s}/5 correct.`;
+ scores.F=s;
+}
+function checkG(){
+ let s=0;
+ for(let i=1;i<=4;i++){if(document.getElementById("G"+i).value===correct.G[i-1])s++;}
+ document.getElementById("fbG").innerHTML=`${s}/4 correct.`;
+ scores.G=s;
+}
+function getTotal(){
+ let total=0,max=39;
+ for(let k in scores)total+=scores[k];
+ let pct=Math.round(total/max*100);
+ let msg=`Total score: ${total}/${max} (${pct}%) `;
+ msg+=(pct>=85?'<span class="correct">Excellent!</span>':pct>=60?'<span class="correct">Good, revise mistakes.</span>':'<span class="wrong">Keep practising.</span>');
+ document.getElementById("finalFeedback").innerHTML=msg;
+}
+</script>
+</body>
+</html>
